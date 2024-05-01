@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
     <title>CSS - Debrief</title>
 </head>
 
 <body>
     <nav id="nav-bar">
-        <img class="sea-scape" src="" alt="sea-scape">
+        <img class="sea-scape" src="./resources/scape.png" alt="sea-scape">
         <div class="right-nav">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -62,6 +63,10 @@
                     <td>HTML, CSS, JS</td>
                     <td>PHP, Python</td>
                 </tr>
+                <tr>
+                    <td class="blank-cell"></td>
+                    <td>.....</td>
+                    <td>.....</td>
             </table>
         </div>
         <br>
@@ -71,13 +76,13 @@
             <h3>Form Heading</h3>
             <form action="#POST">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="input-box">
+                <input type="text" name="name" id="input-box" required>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="input-box">
+                <input type="email" name="email" id="input-box" required>
 
                 <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"> <!-- ADD YOUR PATTERN AND TITLE ATTRIBUTES HERE-->
+                <input type="password" id="pwd" name="pwd" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> <!-- ADD YOUR PATTERN AND TITLE ATTRIBUTES HERE-->
                 <br>
                 <button type="submit">Submit</button>
 
